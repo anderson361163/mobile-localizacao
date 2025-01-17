@@ -9,10 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Precisamos de sua localização para exibir informações relevantes.",
+        "NSLocationAlwaysUsageDescription": "Precisamos de sua localização para funcionalidades em segundo plano."
+      }
     },
     "android": {
       "adaptiveIcon": {
+        "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
